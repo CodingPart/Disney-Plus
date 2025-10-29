@@ -2,10 +2,20 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>Beispiel iFrame</title>
-  <style>html,body,iframe{height:100%;margin:0;padding:0;}iframe{width:100%;border:0;}</style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Iframe Testseite</title>
+  <style>
+    html,body{height:100%;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;}
+    header{padding:10px;background:#0b63c6;color:#fff;text-align:center;}
+    iframe{width:100%;height:calc(100vh - 60px);border:1px solid #ccc;}
+    .notice{padding:12px;text-align:center;background:#fff6c8;border-top:1px solid #eee;}
+  </style>
 </head>
 <body>
-  <iframe src="https://www.google.com/" title="Disney-Plus Einbettung"></iframe>
+  <header><h1>Iframe Test</h1></header>
+  <div class="notice">Wenn das eingebettete Ziel eine grosse Seite ist, wird es häufig aus Sicherheitsgründen blockiert.</div>
+
+  <!-- Beispiel: Example.com lässt normalerweise Framing zu -->
+  <iframe src="https://example.com" title="Eingebettete Seite"></iframe>
 </body>
 </html>
